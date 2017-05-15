@@ -1,0 +1,231 @@
+/* Nav Bar Styling */
+
+#camtech {
+  float: left;
+  margin-top: 1%;
+  margin-left: 1%;
+  height: 150px;
+}
+
+#campbellTech {
+  color: yellow;
+  text-shadow: -20px 0 black, 0 20px black, 20px 0 black, 0 -20px black;
+  font-family: sans-serif;
+  display: inline-block;
+  font-size: 3em;
+}
+
+.nav-bar {
+  background-color: #696969;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 80%;
+  min-height: 10%;
+  text-align: center;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-link {
+  display: inline-block;
+}
+
+.nav-link > a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #e6e600;
+}
+
+/* Body Styling */
+
+#pageBody {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcome .camping {
+  max-width: 50%;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.welcome .banner {
+  text-align: center;
+  color: green;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 100%;
+  bottom: 0px;
+  font: 400 18px 'Kaushan Script', cursive;
+  font-size: 2em;
+}
+
+.signup {
+  margin: auto;
+  width: 80%;
+  border-top: 1px dotted #888;
+  border-bottom: 1px dotted #888;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+
+.text-area {
+  font-size: 1.2em;
+  padding: 0.5%;
+  float: left;
+}
+
+.submit-button {
+  float:left;
+  border: none;
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #1E94BC;
+  color: white;
+  border-radius: 4px;
+}
+
+.signup-info {
+  color: #999;
+  margin-left: 2%;
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 2%;
+  border-bottom: 1px dotted black;
+}
+
+.banner {
+  font: 400 18px 'Kaushan Script', cursive;
+  font-size: 2em;
+}
+
+.pic-container .banner {
+  font: 400 18px 'Kaushan Script', cursive;
+  font-size: 2em;
+}
+
+.pic-container {
+  margin-top: 3%;
+  margin: auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+.pics {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 20%;
+  margin: 2%;
+  min-height: 10%;
+  max-height: 50%;
+  overflow: hidden;
+  box-shadow: 2rem 2rem 2rem 0 #999;
+}
+
+.thumbnail {
+  max-width: 100%;
+}
+
+/* Footer Styling */
+
+.footer {
+  background-color: #000000;
+  color: #696969;
+  text-align: center;
+  padding: 1%;
+}
+
+/* media queries for responsiveness */
+
+@media (max-width: 1154px) {
+  .welcome {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 830px) {
+  .content .camping0 {
+    float: none;
+    display: black;
+  }
+}
+
+@media (max-width: 685px) {
+  #camtech {
+    display: block;
+    margin-left: 40%;
+  }
+
+  .signup {
+    display: block;
+  }
+
+  .pics {
+    display: block;
+    margin: 0 auto;
+    min-width: 50%;
+    max-height: 80%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-bar {
+    position: relative;
+    background-image: none;
+    min-height: 40%;
+  }
+
+  .nav-bar .nav-link {
+    color: white;
+    display: block;
+    text-align: center;
+    max-width: 90%;
+    float: none;
+    padding-bottom: 50px;
+  }
+
+  .nav-link > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .content {
+    min-width: 90%;
+  }
+
+  .signup-valid {
+    margin-bottom: 5%;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    max-height: 10%;
+    background-image: none;
+    color: black;
+    margin-top: 1%;
+  }
+}
